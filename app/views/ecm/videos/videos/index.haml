@@ -1,0 +1,7 @@
+%h1= t('.title', inflections)
+
+= render_collection(@collection, Ecm::Videos::Video, as: :bootstrap_media_object) do |list|
+  = list.media_object(title_method: :name, body: list.resource.description(:html), image_url: list.resource.clip.url(:default_thumb))
+
+.well.page-actions
+  = link_to(t('.back'), main_app.root_path, class: 'btn btn-default')

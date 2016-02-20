@@ -1,0 +1,51 @@
+de:
+  attributes:
+    created_at: Erstellt am
+    updated_at: Aktualisiert am
+  activerecord:
+    models:
+      ecm/videos/category:
+        one: Kategorie
+        other: Kategorien
+      ecm/videos/video:
+        one: Video
+        other: Videos
+    attributes:
+      ecm/videos/category:
+        description: Beschreibung
+        locale: Sprache
+        markup_language: Markup Sprache
+        name: Name
+        published: Veröffentlicht
+        published_at: Veröffentlicht am
+        videos_count: Videos
+      ecm/videos/video:
+        category: Kategorie
+        category_id: Kategorie
+        clip: Video
+        clip_content_type: Videotyp
+        clip_file_name: Videoname
+        clip_file_size: Videogröße
+        clip_updated_at: Video aktualisiert am
+        description: Beschreibung
+        markup_language: Markup Sprache
+        name: Name
+        published: Veröffentlicht
+        published_at: Veröffentlicht am
+  ecm:
+    videos:
+      categories:
+        index:
+          back: "Zurück"
+          title: "%{collection_name}"
+        show:
+          back: "Zurück"
+      videos:
+        index:
+          back: "Zurück"
+          title: "%{collection_name}"
+        show:
+          back: "Zurück"
+  routes:
+    categories: 'kategorien'
+    videos: 'videos'

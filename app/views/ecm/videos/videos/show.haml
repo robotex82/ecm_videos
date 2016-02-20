@@ -1,0 +1,13 @@
+%h1#video-name= @resource.name
+
+.row.bottom-margin-2
+  #video-clip
+    %video.col-xs-12.video-js{ controls: :true, preload: 'auto', width: "auto", height: "auto", 'data-setup': "{}" }
+      %source{ src: @resource.clip.url, type: @resource.clip_content_type }  }
+
+
+#video-description
+  = @resource.description(:html)
+
+.well.page-actions
+  = link_to(t('.back'), collection_path, class: 'btn btn-default')

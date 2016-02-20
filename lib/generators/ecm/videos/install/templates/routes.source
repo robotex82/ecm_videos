@@ -1,0 +1,5 @@
+  
+  # ECM Videos Frontend Routing
+  localized do
+    mount Ecm::Videos::Engine, at: '/videos'
+  end
