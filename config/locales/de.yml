@@ -16,6 +16,7 @@ de:
         locale: Sprache
         markup_language: Markup Sprache
         name: Name
+        preview_image: Vorschau
         published: Veröffentlicht
         published_at: Veröffentlicht am
         videos_count: Videos
@@ -30,6 +31,7 @@ de:
         description: Beschreibung
         markup_language: Markup Sprache
         name: Name
+        preview_image: Vorschau
         published: Veröffentlicht
         published_at: Veröffentlicht am
   ecm:

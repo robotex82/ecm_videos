@@ -5,7 +5,7 @@
 
 
 #video-category-videos
-  = render_collection(@resource.videos, Ecm::Videos::Video, as: :bootstrap_media_object) do |list|
+  = render_collection(@resource.videos.published, Ecm::Videos::Video, as: :bootstrap_media_object) do |list|
     = list.media_object(title_method: :name, body: list.resource.description(:html), image_url: list.resource.clip.url(:default_thumb))
 
 .well.page-actions

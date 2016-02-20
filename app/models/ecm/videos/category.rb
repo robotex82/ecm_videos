@@ -18,6 +18,11 @@ module Ecm::Videos
       videos.first.try(:preview_image)
     end
 
+    def published_preview_image_url(style)
+      return unless video = videos.published.first
+      video.clip.url(style)
+    end
+
     def videos_count
       videos.count
     end
