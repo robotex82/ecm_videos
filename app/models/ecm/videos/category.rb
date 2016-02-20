@@ -3,7 +3,7 @@ module Ecm::Videos
     # markup support
     include Models::MarkupConcern
     markup :description
-    
+
     # acts as published
     include ActsAsPublished::ActiveRecord
     acts_as_published

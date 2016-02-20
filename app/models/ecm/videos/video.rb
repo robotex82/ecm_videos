@@ -11,7 +11,7 @@ module Ecm::Videos
     # acts as list
     acts_as_list scope: :category
     default_scope { order(position: :asc) }
-    
+
     belongs_to :category
 
     has_attached_file :clip, Configuration.paperclip_options.call(self)

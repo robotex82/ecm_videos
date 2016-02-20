@@ -28,8 +28,8 @@ Ecm::Videos.configure do |config|
   #            }
   #          end
   #
-  config.paperclip_options = Proc.new do |model|
-    { 
+  config.paperclip_options = proc do |_model|
+    {
       styles: {
         small_thumb:   '80x60',
         medium_thumb:  '160x120',

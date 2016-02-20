@@ -12,7 +12,7 @@ module Ecm
       mattr_accessor(:default_markup_language) { 'textile' }
       mattr_accessor(:base_controller) { 'FrontendController' }
       mattr_accessor(:paperclip_options) do
-        Proc.new { {} }
+        proc { {} }
       end
     end
   end

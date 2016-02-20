@@ -6,5 +6,5 @@ require 'paperclip/av/transcoder'
 require 'rails_rad'
 require 'resource_renderer'
 
-require "ecm/videos"
-require "ecm/videos/engine"
+require 'ecm/videos'
+require 'ecm/videos/engine'
