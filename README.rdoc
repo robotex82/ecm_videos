@@ -2,18 +2,24 @@
 
 This project rocks and uses MIT-LICENSE.
 
+= When trying to upload new videos on heroku, I get the error message "errors while processing Ecm::Videos::Video ID <x>: Video Paperclip::Errors::NotIdentifiedByImageMagickError". What can I do?
+
+You have to add the ffmpeg buildpack to heroku:
+
+    heroku buildpacks:add https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git --remote production
+
 = When trying to upload new videos on ubuntu, I get the error message "errors while processing Ecm::Videos::Video ID <x>: Video Paperclip::Errors::NotIdentifiedByImageMagickError". What can I do?
 
 Your system is missing ffmpeg. Install it:
 
-sudo apt-get --purge remove ffmpeg
-sudo apt-get --purge autoremove
+    sudo apt-get --purge remove ffmpeg
+    sudo apt-get --purge autoremove
 
-sudo apt-get install ppa-purge
-sudo ppa-purge ppa:jon-severinsson/ffmpeg
+    sudo apt-get install ppa-purge
+    sudo ppa-purge ppa:jon-severinsson/ffmpeg
 
-sudo add-apt-repository ppa:mc3man/trusty-media
-sudo apt-get update
-# sudo apt-get dist-upgrade
+    sudo add-apt-repository ppa:mc3man/trusty-media
+    sudo apt-get update
+    # sudo apt-get dist-upgrade
 
-sudo apt-get install ffmpeg
+    sudo apt-get install ffmpeg
