@@ -39,13 +39,11 @@ de:
       categories:
         index:
           back: "Zurück"
-          title: "%{collection_name}"
         show:
           back: "Zurück"
       videos:
         index:
           back: "Zurück"
-          title: "%{collection_name}"
         show:
           back: "Zurück"
   routes:

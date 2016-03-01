@@ -1,4 +1,5 @@
-%h1= t('.title', inflections)
+- content_for(:title) { t('.title', inflections) }
+%h1= yield(:title)
 
 = render_collection(@collection, Ecm::Videos::Category, as: :bootstrap_media_object) do |list|
   = list.media_object(title_method: :name, body: list.resource.description(:html), image_url: list.resource.published_preview_image_url(:default_thumb), link_to_more_url: url_for(list.resource), media_body_content_html_options: { class: 'media-body-content.bottom-margin-1 truncate lines-3' })

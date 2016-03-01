@@ -1,4 +1,5 @@
-%h1= @resource.name
+- content_for(:title) { @resource.name }
+%h1= yield :title
 
 #video-category-description
   = @resource.description(:html)
