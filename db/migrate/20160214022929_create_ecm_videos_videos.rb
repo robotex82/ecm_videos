@@ -1,4 +1,4 @@
-class CreateEcmVideosVideos < ActiveRecord::Migration
+class CreateEcmVideosVideos < ActiveRecord::Migration[4.2]
   def change
     create_table :ecm_videos_videos do |t|
       t.integer :category_id

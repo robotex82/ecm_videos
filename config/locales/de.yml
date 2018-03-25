@@ -49,5 +49,6 @@ de:
         show:
           back: "Zurück"
   routes:
+    ecm_videos_engine: videos
     categories: 'kategorien'
     videos: 'videos'

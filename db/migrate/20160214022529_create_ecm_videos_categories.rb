@@ -1,4 +1,4 @@
-class CreateEcmVideosCategories < ActiveRecord::Migration
+class CreateEcmVideosCategories < ActiveRecord::Migration[4.2]
   def change
     create_table :ecm_videos_categories do |t|
       t.string :locale
