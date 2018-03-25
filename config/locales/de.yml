@@ -12,15 +12,21 @@ de:
         other: Videos
     attributes:
       ecm/videos/category:
+        id: ID
         description: Beschreibung
         locale: Sprache
         markup_language: Markup Sprache
         name: Name
+        position: Position
         preview_image: Vorschau
         published: Veröffentlicht
         published_at: Veröffentlicht am
+        slug: Freundliche ID
         videos_count: Videos
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
       ecm/videos/video:
+        id: ID
         category: Kategorie
         category_id: Kategorie
         clip: Video
@@ -31,9 +37,13 @@ de:
         description: Beschreibung
         markup_language: Markup Sprache
         name: Name
+        position: Position
         preview_image: Vorschau
         published: Veröffentlicht
         published_at: Veröffentlicht am
+        slug: Freundliche ID
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
   ecm:
     videos:
       categories:

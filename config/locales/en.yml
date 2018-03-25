@@ -1,0 +1,64 @@
+en:
+  attributes:
+    created_at: Created at
+    updated_at: Updated at
+  activerecord:
+    models:
+      ecm/videos/category:
+        one: Category
+        other: Categories
+      ecm/videos/video:
+        one: Video
+        other: Videos
+    attributes:
+      ecm/videos/category:
+        id: ID
+        description: Description
+        locale: Locale
+        markup_language: Markup language
+        name: Name
+        position: Position
+        preview_image: Preview image
+        published: Published
+        published_at: Published at
+        slug: Slug
+        videos_count: Videos
+        created_at: Created at
+        updated_at: Updated at
+      ecm/videos/video:
+        id: ID
+        category: Category
+        category_id: Category
+        clip: Clip
+        clip_content_type: Clip content type
+        clip_file_name: Clip file name
+        clip_file_size: Clip file size
+        clip_updated_at: Clip updated at
+        description: Description
+        markup_language: Markup language
+        name: Name
+        position: Position
+        preview_image: Preview image
+        published: Published
+        published_at: Published at
+        slug: Slug
+        created_at: Created at
+        updated_at: Updated at
+  ecm:
+    videos:
+      categories:
+        index:
+          back: Back
+          title: "%{collection_name}"
+        show:
+          back: Back
+      videos:
+        index:
+          back: Back
+          title: "%{collection_name}"
+        show:
+          back: Back
+  routes:
+    ecm_videos_engine: videos
+    categories: categories
+    videos: videos
