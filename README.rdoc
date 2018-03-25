@@ -12,8 +12,8 @@ You have to add the ffmpeg buildpack to heroku:
 
 Your system is missing ffmpeg. Install it:
 
-    sudo apt-get --purge remove ffmpeg
-    sudo apt-get --purge autoremove
+    sudo apt-get -y --purge remove ffmpeg
+    sudo apt-get -y --purge autoremove
 
     sudo apt-get install ppa-purge
     sudo ppa-purge ppa:jon-severinsson/ffmpeg
@@ -22,4 +22,10 @@ Your system is missing ffmpeg. Install it:
     sudo apt-get update
     # sudo apt-get dist-upgrade
 
-    sudo apt-get install ffmpeg
+    sudo apt-get -y install ffmpeg
+
+= When trying to upload new videos on ubuntu, I get the error message "Av::UnableToDetect: Unable to detect any supported library". What can I do?
+
+Your system is missing libav-tools. Install it:
+
+    sudo apt-get install libav-tools
